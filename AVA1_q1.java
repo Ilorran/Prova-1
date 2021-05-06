@@ -1,6 +1,6 @@
-//(2.0)Crie um programa que simule uma calculadora simples capaz de realizar as operações básicas. O programa 
-//deve receber 3 dados: dois números e um caractere. Este caractere poderá ser '+', '-', ‘*' ou '/' , e representarão a 
-//operação matemática que você deseja realizar entre os números.
+//(2.0)Crie um programa que simule uma calculadora simples capaz de realizar as operaÃ§Ãµes bÃ¡sicas. O programa 
+//deve receber 3 dados: dois nÃºmeros e um caractere. Este caractere poderÃ¡ ser '+', '-', â€˜*' ou '/' , e representarÃ£o a 
+//operaÃ§Ã£o matemÃ¡tica que vocÃª deseja realizar entre os nÃºmeros.
 
 
 package q1_ava1;
@@ -20,13 +20,13 @@ public class AVA1_q1 {
 		Scanner teclado7 = new Scanner(System.in);
 		Scanner teclado8 = new Scanner(System.in);
 		System.out.println("Vamos brincar de calcular?");
-		System.out.println("Vamos lá, com nosso programinha, deixarei abaixo uma lista ");
-		System.out.println("de informações necessárias para o uso do mesmo.");
-		System.out.println("Qual opção gostaria de realizar?");
-		System.out.println("[ + ] - Adição / DIGITE '1' UMA VEZ ");
-		System.out.println("[ - ] - Subtração / DIGITE '2' DUAS VEZES ");
-		System.out.println("[ / ] - Divisão / DIGITE '3' 3 VEZES ");
-		System.out.println("[ * ] - Multiplição / DIGITE '4' QUATRO VEZES ");
+		System.out.println("Vamos lÃ¡, com nosso programinha, deixarei abaixo uma lista ");
+		System.out.println("de informaÃ§Ãµes necessÃ¡rias para o uso do mesmo.");
+		System.out.println("Qual opÃ§Ã£o gostaria de realizar?");
+		System.out.println("[ + ] - AdiÃ§Ã£o / DIGITE '1' UMA VEZ ");
+		System.out.println("[ - ] - SubtraÃ§Ã£o / DIGITE '2' DUAS VEZES ");
+		System.out.println("[ / ] - DivisÃ£o / DIGITE '3' 3 VEZES ");
+		System.out.println("[ * ] - MultipliÃ§Ã£o / DIGITE '4' QUATRO VEZES ");
 		System.out.print("Digite: ");
 		
 		int selectedObject = teclado.nextInt();
@@ -34,7 +34,7 @@ public class AVA1_q1 {
 		int mais;
 		mais = selectedObject;
 		 
-		if (mais < 1.1) {	
+		if (mais == 1.1) {	
 			System.out.print("Agora selecione o valor 1 a ser somado: ");
 			float first1 = teclado.nextInt();
 			System.out.print("Agora selecione o valor 2 a ser somado: ");
@@ -57,10 +57,10 @@ public class AVA1_q1 {
 		menos = selectedObject1;
 
 		
-		if (menos < 2.1) {
-			System.out.print("Agora selecione o valor 1 a ser subtraído: ");
+		if (menos == 2.1) {
+			System.out.print("Agora selecione o valor 1 a ser subtraÃ­do: ");
 			float first2 = teclado1.nextFloat();
-			System.out.print("Agora selecione o valor 2 a ser subtraído: ");
+			System.out.print("Agora selecione o valor 2 a ser subtraÃ­do: ");
 			float second2 = teclado2.nextFloat();
 			
 			float menos1;
@@ -80,7 +80,7 @@ public class AVA1_q1 {
 		divisao = selectedObject2;
 
 		
-		if (divisao <= 3.1) {
+		if (divisao == 3.1) {
 			System.out.print("Agora selecione o valor 1 a ser dividido: ");
 			float first3 = teclado3.nextFloat();
 			System.out.print("Agora selecione o valor 2 a ser dividido: ");
@@ -102,7 +102,7 @@ public class AVA1_q1 {
 		multi = selectedObject3;
 
 		
-		if (multi >= 4) {
+		if (multi == 4) {
 			System.out.print("Agora selecione o valor 1 a ser multiplicado: ");
 			float first4 = teclado6.nextFloat();
 			System.out.print("Agora selecione o valor 2 a ser multiplicado: ");
